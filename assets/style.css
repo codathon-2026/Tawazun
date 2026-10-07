@@ -1,0 +1,198 @@
+/* Tawazun demo styles — palette and type follow the pitch deck. */
+
+/* Font stack is set in functions/common.py (Latin: Source Sans, Arabic: ARABIC_FONT). */
+
+/* Hide Streamlit chrome so it looks like a product, not a notebook. */
+/* (stToolbar itself must stay: it holds the expand-sidebar button.) */
+#MainMenu, footer, [data-testid="stToolbarActions"], [data-testid="stMainMenu"],
+[data-testid="stAppDeployButton"], [data-testid="stDecoration"],
+[data-testid="stStatusWidget"] { display: none !important; }
+header[data-testid="stHeader"] { background: transparent; }
+
+.stApp { transition: background-color .8s ease; }
+.stMainBlockContainer { padding-top: 2.2rem; max-width: 1100px; }
+
+/* ---------- motion ---------- */
+@keyframes tz-fade-up {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes tz-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes tz-balance {
+  0%   { transform: rotate(-14deg); }
+  35%  { transform: rotate(9deg); }
+  60%  { transform: rotate(-4deg); }
+  80%  { transform: rotate(1.5deg); }
+  100% { transform: rotate(0deg); }
+}
+@keyframes tz-breathe {
+  0%, 100% { opacity: .55; } 50% { opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+/* Each page lives in a keyed container; a new key = a fresh mount = the entrance plays. */
+.st-key-page_login  { animation: tz-fade-up .8s cubic-bezier(.2,.7,.2,1) both; }
+.st-key-page_splash { animation: tz-fade .5s ease both; }
+.st-key-page_main   { animation: tz-fade-up .8s cubic-bezier(.2,.7,.2,1) both; }
+
+/* Tab panels replay their entrance whenever they are shown. */
+[data-baseweb="tab-panel"] { animation: tz-fade-up .45s ease both; }
+
+.tz-scale .tz-beam { transform-box: view-box; transform-origin: 60px 29px; }
+.tz-scale .tz-animate { animation: tz-balance 1.6s cubic-bezier(.3,.6,.3,1) both; }
+
+/* ---------- typography ---------- */
+.tz-kicker {
+  color: #315B4C; font-size: .78rem; font-weight: 700; letter-spacing: .08em;
+  text-transform: uppercase; margin-bottom: .25rem;
+}
+.tz-wordmark { font-weight: 800; color: #142B2E; line-height: 1; margin: 0; }
+.tz-wordmark-alt { color: #315B4C; font-weight: 700; }
+.tz-muted { color: #677572; font-size: .92rem; }
+.tz-header { display: flex; align-items: center; gap: 18px; }
+.tz-header svg { flex: none; }
+.tz-header h1 { padding: 0 0 .2rem 0; }
+
+/* ---------- cards ---------- */
+.tz-card {
+  background: #FFFFFF; border: 1px solid #D8DED3; border-radius: 14px;
+  padding: 14px 18px; margin-bottom: 12px;
+  box-shadow: 0 1px 2px rgba(20,43,46,.05);
+  animation: tz-fade-up .55s cubic-bezier(.2,.7,.2,1) both;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.tz-card:hover { transform: translateY(-2px); box-shadow: 0 8px 22px rgba(20,43,46,.08); }
+.tz-card h4 { margin: 0 0 .35rem 0; font-size: 1.02rem; color: #142B2E; }
+.tz-card p  { margin: .25rem 0; color: #142B2E; }
+.tz-quote { color: #677572; font-style: italic; font-size: .92rem; }
+.tz-card.tz-tint { background: #EEF1EA; border-color: #D8DED3; }
+.tz-card.tz-post { background: #FFFFFF; border-color: #C5D0C8; }
+
+.tz-chip {
+  display: inline-block; font-size: .74rem; font-weight: 700; padding: 2px 10px;
+  border-radius: 999px; margin-inline-start: 8px; vertical-align: middle;
+}
+.tz-chip.clear    { background: #F6E3DF; color: #9E3F31; }
+.tz-chip.possible { background: #EEF1EA; color: #315B4C; }
+
+.tz-cue { display: flex; justify-content: space-between; gap: 12px; padding: 7px 0; border-bottom: 1px solid #EEF1EA; }
+.tz-cue:last-child { border-bottom: none; }
+.tz-cue b { color: #142B2E; }
+.tz-cue span { color: #677572; text-align: end; }
+.tz-cue .flag { color: #9E3F31; }
+
+.tz-avatar {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 30px; height: 30px; border-radius: 50%; background: #D8DED3; color: #142B2E;
+  font-weight: 700; font-size: .8rem; margin-inline-end: 8px; vertical-align: middle;
+}
+.tz-hostile { background: #FFF7F5; border-color: #EBC8C1; }
+
+/* ---------- login ---------- */
+.tz-hero, .tz-hero h1, .tz-hero p, .tz-hero div { text-align: center !important; }
+.tz-hero h1 { padding: .2rem 0 .4rem 0; }
+.tz-hero p { color: #D8DED3 !important; margin-top: .5rem; }
+.st-key-page_login .tz-wordmark { color: #FFFFFF; }
+.st-key-page_login .tz-wordmark-alt { color: #B7C78A; }
+.st-key-page_login .tz-kicker { color: #B7C78A; }
+.st-key-page_login [data-testid="stForm"] {
+  background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.14); border-radius: 16px;
+}
+.st-key-page_login [data-testid="stForm"] label p { color: #D8DED3 !important; }
+.st-key-page_login button[kind="primaryFormSubmit"],
+.st-key-page_login [data-testid="stBaseButton-primaryFormSubmit"] {
+  background: #C75A4A !important; border: none !important; color: #FFFFFF !important;
+  transition: transform .15s ease, filter .15s ease;
+}
+.st-key-page_login [data-testid="stBaseButton-primaryFormSubmit"]:hover { filter: brightness(1.08); transform: translateY(-1px); }
+.tz-login-quote {
+  border-inline-start: none; margin-top: 18px; padding: 14px 18px; border-radius: 14px;
+  background: rgba(183,199,138,.10); color: #FFFFFF;
+}
+.tz-login-quote .q { font-size: 1.15rem; font-style: italic; }
+.tz-login-quote .src { color: #B7C78A; font-size: .82rem; margin-top: 4px; }
+.tz-privacy {
+  margin-top: 14px; padding: 14px 18px; border-radius: 14px;
+  background: rgba(255,255,255,.06); border: 1px solid rgba(183,199,138,.35);
+  animation: tz-fade-up .8s .25s cubic-bezier(.2,.7,.2,1) both;
+}
+.tz-privacy .ttl { color: #B7C78A; font-weight: 700; margin-bottom: 6px; }
+.tz-privacy ul { margin: 0; padding-inline-start: 1.1rem; }
+.tz-privacy li { color: #FFFFFF; font-size: .9rem; margin: 4px 0; }
+.st-key-page_login button[kind="secondary"],
+.st-key-page_splash button[kind="secondary"] {
+  background: transparent; color: #FFFFFF; border-color: rgba(255,255,255,.35);
+}
+
+/* ---------- splash ---------- */
+/* Full-screen overlay, so the previous page can't show through while it is being replaced. */
+.tz-splash {
+  position: fixed; inset: 0; z-index: 999990; background: #142B2E;
+  animation: tz-fade .45s ease both; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px;
+}
+.tz-splash .msg { color: #B7C78A; font-size: 1.05rem; animation: tz-breathe 1.4s ease-in-out infinite; }
+
+/* ---------- direction overrides for content in the *post's* language ---------- */
+.stMainBlockContainer [class*="st-key-dir_ltr"] { direction: ltr; }
+.stMainBlockContainer [class*="st-key-dir_ltr"] p,
+.stMainBlockContainer [class*="st-key-dir_ltr"] h3 { text-align: left; }
+.stMainBlockContainer [class*="st-key-dir_rtl"] { direction: rtl; }
+.stMainBlockContainer [class*="st-key-dir_rtl"] p,
+.stMainBlockContainer [class*="st-key-dir_rtl"] h3,
+.stMainBlockContainer [class*="st-key-dir_rtl"] .tz-kicker { text-align: right; }
+.stMainBlockContainer [class*="st-key-dir_rtl"] .tz-kicker { letter-spacing: 0; font-size: .86rem; }
+/* Arabic content inside the English UI: a touch larger, as Arabic reads small at Latin sizes. */
+.stMainBlockContainer [class*="st-key-dir_rtl"] p { font-size: 1.1rem; }
+
+/* ---------- post box: plain -> Facebook style ---------- */
+.st-key-postbox { gap: 0 !important; }
+/* A link or English post in the Arabic UI keeps its own direction (no "/https://…"). */
+.st-key-postbox textarea { unicode-bidi: plaintext; text-align: start; }
+.st-key-postbox [data-testid="stMarkdownContainer"] { margin-bottom: 0; }
+.st-key-postbox [data-testid="stTextAreaRootElement"],
+.st-key-postbox textarea {
+  transition: background-color .45s ease, border-color .45s ease, box-shadow .45s ease, border-radius .45s ease;
+}
+.tz-fb-banner {
+  display: flex; align-items: center; gap: 10px;
+  background: #1877F2; color: #FFFFFF; border-radius: 12px 12px 0 0;
+  max-height: 0; padding: 0 14px; opacity: 0; overflow: hidden;
+  transform: translateY(18px) scaleY(.6); transform-origin: bottom;
+  transition: max-height .5s cubic-bezier(.2,.8,.2,1), padding .5s cubic-bezier(.2,.8,.2,1),
+              opacity .35s ease, transform .5s cubic-bezier(.2,.8,.2,1);
+}
+.st-key-postbox.tz-fb .tz-fb-banner { max-height: 60px; padding: 10px 14px; opacity: 1; transform: none; }
+.tz-fb-logo {
+  display: inline-flex; align-items: center; justify-content: center; flex: none;
+  width: 28px; height: 28px; border-radius: 50%; background: #FFFFFF; color: #1877F2;
+  font: 800 20px/1 Arial, sans-serif; padding-top: 4px; box-sizing: border-box;
+}
+.tz-fb-logo.sm { width: 34px; height: 34px; background: #1877F2; color: #FFFFFF; font-size: 24px; }
+.tz-fb-word { font: 700 1.05rem Arial, sans-serif; letter-spacing: .01em; }
+.tz-fb-meta { margin-inline-start: auto; font-size: .85rem; opacity: .92; }
+.st-key-postbox.tz-fb [data-testid="stTextAreaRootElement"] {
+  border: 2px solid #1877F2 !important; border-radius: 0 0 12px 12px !important;
+  background: #FFFFFF !important; box-shadow: 0 8px 22px rgba(24,119,242,.14);
+}
+.st-key-postbox.tz-fb textarea { background: #FFFFFF !important; color: #1C1E21 !important; }
+
+/* "Retrieved" Facebook post card */
+.tz-fb-post {
+  background: #FFFFFF; border: 1px solid #DADDE1; border-radius: 12px; padding: 12px 16px; margin: 6px 0 14px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.08); animation: tz-fade-up .5s cubic-bezier(.2,.7,.2,1) both;
+}
+.tz-fb-post .hd { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.tz-fb-post .hd b { color: #050505; }
+.tz-fb-post .meta { color: #65676B; font-size: .8rem; }
+.tz-fb-post p { color: #050505; margin: 0 0 10px; }
+.tz-fb-post .ft { color: #65676B; font-size: .85rem; border-top: 1px solid #E4E6EB; padding-top: 8px; }
+
+/* ---------- misc widgets ---------- */
+.stButton button, [data-testid^="stBaseButton"] { transition: transform .15s ease, box-shadow .15s ease; }
+.stButton button:hover { transform: translateY(-1px); }
+[data-testid="stChatMessage"] { animation: tz-fade-up .45s ease both; }
+/* Each chat paragraph takes the direction of its own text (English in the Arabic UI and vice versa). */
+[data-testid="stChatMessage"] p { unicode-bidi: plaintext; text-align: start !important; }
+.stTabs [data-baseweb="tab"] p { font-size: 1.02rem; font-weight: 700; }

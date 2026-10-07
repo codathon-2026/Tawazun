@@ -1,0 +1,423 @@
+{
+  "_note": "All posts, comments and names in this file are fictional, written for the demo. Arabic convention: posts, comments and suggested replies (content) are Libyan dialect; Tawazun's own voice (analysis, explanations, labels) is Modern Standard Arabic.",
+  "stage_post": {
+    "ar": "🚨 عاجل جدًا!! الميّة بتنقطع على طرابلس كلها ١٠ أيام من بكرة!! واحد يخدم في الشركة قالّي وهما مخبّيين الخبر. عبّوا كل شي عندكم توّا قبل ما يفوت الوقت، وانشروها قبل ما يمسحوها!!!",
+    "en": "🚨 URGENT!! Water will be cut off across ALL of Tripoli for 10 days starting tomorrow!! A guy who works at the company told me they're hiding it. Fill up everything you have NOW before it's too late, and SHARE before they delete this!!!"
+  },
+  "analysis": {
+    "ar": {
+      "kicker": "الخاصية ٠١ · كاشف التضليل",
+      "heading": "ماذا يفعل هذا المنشور",
+      "summary": "كُتب المنشور بطريقة تدفعك إلى التصرّف والمشاركة بسرعة، قبل أن تتحقّق. وجدنا ٥ إشارات:",
+      "level_names": {
+        "clear": "واضحة",
+        "possible": "محتملة"
+      },
+      "signals": [
+        {
+          "label": "ضغط الإلحاح",
+          "level": "clear",
+          "quote": "«عاجل جدًا!!» · «توّا قبل ما يفوت الوقت»",
+          "explain": "يدفعك الإلحاح إلى التصرّف قبل التفكير. الإعلانات الرسمية تأتي عادةً بمواعيد وتفاصيل، لا بعلامات تعجّب."
+        },
+        {
+          "label": "مصدر مجهول «من الداخل»",
+          "level": "clear",
+          "quote": "«واحد يخدم في الشركة قالّي»",
+          "explain": "من هو؟ وأي شركة؟ لا توجد طريقة للتحقّق منه. عبارة «أحدهم أخبرني» ليست مصدرًا."
+        },
+        {
+          "label": "تأطير السرّية",
+          "level": "clear",
+          "quote": "«مخبّيين الخبر» · «قبل ما يمسحوها»",
+          "explain": "يجعل غياب أي إعلان رسمي يبدو دليلًا، فيُغلق الباب أمام السؤال البديهي: «أين الإعلان؟»"
+        },
+        {
+          "label": "دعوة إلى النشر",
+          "level": "clear",
+          "quote": "«انشروها»",
+          "explain": "يطلب منك المنشور نشره قبل التحقّق منه، والنشر السريع هو ما يُكبّر الشائعة."
+        },
+        {
+          "label": "ادعاء كبير بلا دليل",
+          "level": "possible",
+          "quote": "«طرابلس كلها ١٠ أيام»",
+          "explain": "ادعاء بهذا الحجم والتحديد يصحبه عادةً إعلان من الجهة المسؤولة، وغيابه يستحق السؤال."
+        }
+      ],
+      "uncertainty_title": "درجة عدم اليقين",
+      "uncertainty": "هذا لا يعني أن الخبر كاذب — فانقطاع المياه يحدث فعلًا. لا يستطيع توازن التحقّق من الحدث نفسه؛ نحن نوضّح كيف كُتب المنشور، والقرار في ما تتحقّق منه يعود إليك.",
+      "source": {
+        "kicker": "الخاصية ٠٢ · فاحص المصادر",
+        "heading": "دلائل المصدر",
+        "cues": [
+          {
+            "label": "الكاتب",
+            "value": "مجهول — منشور مُعاد توجيهه",
+            "flag": true
+          },
+          {
+            "label": "المصدر الأصلي",
+            "value": "لم يُذكر أي مصدر",
+            "flag": true
+          },
+          {
+            "label": "إعلان رسمي أو رابط",
+            "value": "لا يوجد",
+            "flag": true
+          },
+          {
+            "label": "التاريخ والتفاصيل",
+            "value": "«من بكرة» — دون تاريخ أو مناطق محدّدة",
+            "flag": true
+          },
+          {
+            "label": "أسلوب الكتابة",
+            "value": "علامات تعجّب كثيرة ورموز تحذير",
+            "flag": false
+          }
+        ],
+        "where_heading": "أين تتحقّق"
+      },
+      "feel": {
+        "kicker": "الخاصية ٠٤ · محلّل الأثر النفسي",
+        "heading": "بماذا شعرت وأنت تقرؤه؟",
+        "prompt": "اختر الشعور الأقرب — لا توجد إجابة خاطئة.",
+        "options": [
+          {
+            "id": "worried",
+            "emoji": "😟",
+            "label": "قلق",
+            "text": "من الطبيعي أن تشعر بالقلق؛ فالمنشور مكتوب ليثير هذا الشعور تحديدًا: موعد قريب («من بكرة»)، وخطر يمسّ حاجة أساسية (المياه)، وإحساس بأن الوقت ينفد. قلقك هنا ردّ فعل على الأسلوب، وليس بالضرورة على صحة الخبر."
+          },
+          {
+            "id": "angry",
+            "emoji": "😠",
+            "label": "غضب",
+            "text": "الغضب مفهوم. عبارة «مخبّيين الخبر» تزرع إحساسًا بالظلم وبأن أحدًا يخدعك. والغضب يُسرّع النشر — وهذا بالضبط ما يطلبه المنشور."
+          },
+          {
+            "id": "sad",
+            "emoji": "😔",
+            "label": "ضيق",
+            "text": "الضيق منطقي حين تشعر أن حاجة أساسية في خطر ولا تملك التحكّم فيها. خذ نفسًا عميقًا؛ لست مضطرًا إلى التصرّف الآن لتكون بأمان."
+          },
+          {
+            "id": "confused",
+            "emoji": "😕",
+            "label": "حيرة",
+            "text": "الحيرة إشارة صحية: لقد لاحظت أن شيئًا ما ناقص. فالمنشور لم يقدّم مصدرًا ولا تاريخًا ولا تفاصيل — وهذا سبب كافٍ للتوقّف."
+          },
+          {
+            "id": "fine",
+            "emoji": "🙂",
+            "label": "بخير",
+            "text": "جيد أن المنشور لم يؤثّر فيك كثيرًا. وحتى إن شعرت بالهدوء، فقد يشعر غيرك بالضغط — فكّر قبل إعادة النشر."
+          }
+        ]
+      },
+      "next": {
+        "kicker": "اختار استجابتك",
+        "heading": "ما خطوتك التالية؟",
+        "prompt": "القرار لك. هذه خيارات، لا أوامر.",
+        "options": [
+          {
+            "id": "pause",
+            "emoji": "⏸️",
+            "label": "توقّف",
+            "text": "لا تُعِد نشره الآن. خذ ثلاثة أنفاس بطيئة، وعُد إليه بعد عشر دقائق؛ فالخبر الصحيح يبقى صحيحًا بعد عشر دقائق."
+          },
+          {
+            "id": "check",
+            "emoji": "🔎",
+            "label": "تحقّق",
+            "text": "ابحث عن إعلان في الصفحة الرسمية لشركة المياه أو البلدية. وإن لم تجد شيئًا، فاسأل من أرسله إليك: «من أين جاء هذا الخبر؟»"
+          },
+          {
+            "id": "ground",
+            "emoji": "🌿",
+            "label": "تمرين تهدئة",
+            "text": "جرّب تمرين ٥-٤-٣-٢-١: سمِّ خمسة أشياء تراها، وأربعة تلمسها، وثلاثة أصوات تسمعها، ورائحتين تشمّهما، وشيئًا واحدًا تتذوّقه. يعيدك هذا إلى اللحظة الحاضرة."
+          },
+          {
+            "id": "disengage",
+            "emoji": "🚪",
+            "label": "ابتعد قليلًا",
+            "text": "يمكنك إغلاق التطبيق، أو كتم المجموعة لمدة ساعة. الابتعاد عن المحتوى المقلق ليس هروبًا — بل اختيار."
+          }
+        ]
+      }
+    },
+    "en": {
+      "kicker": "Feature 01 · Misinformation detector",
+      "heading": "What this post is doing",
+      "summary": "The post is written to push you to act and share quickly, before you check. We found 5 signals:",
+      "level_names": {
+        "clear": "Clearly present",
+        "possible": "Possible"
+      },
+      "signals": [
+        {
+          "label": "Urgency pressure",
+          "level": "clear",
+          "quote": "“URGENT!!” · “NOW before it's too late”",
+          "explain": "Urgency makes you act before you think. Official notices usually come with a schedule and details, not exclamation marks."
+        },
+        {
+          "label": "Unnamed “insider” source",
+          "level": "clear",
+          "quote": "“A guy who works at the company told me”",
+          "explain": "Who is he? Which company? There is no way to check. “Someone told me” is not a source."
+        },
+        {
+          "label": "Secrecy framing",
+          "level": "clear",
+          "quote": "“they're hiding it” · “before they delete this”",
+          "explain": "It makes the absence of any official notice look like proof. That shuts down the obvious question: “where is the announcement?”"
+        },
+        {
+          "label": "Call to share",
+          "level": "clear",
+          "quote": "“SHARE”",
+          "explain": "The post asks you to spread it before you verify it. Fast sharing is what makes a rumour grow."
+        },
+        {
+          "label": "Big claim, no evidence",
+          "level": "possible",
+          "quote": "“ALL of Tripoli for 10 days”",
+          "explain": "A claim this large and specific usually comes with a notice from the responsible authority. Its absence is worth a question."
+        }
+      ],
+      "uncertainty_title": "How sure are we?",
+      "uncertainty": "This does not mean the claim is false — water cuts do happen. Tawazun cannot verify the event itself. We show you how the post is written; what you check next is your decision.",
+      "source": {
+        "kicker": "Feature 02 · Source checker",
+        "heading": "Source cues",
+        "cues": [
+          {
+            "label": "Author",
+            "value": "Unknown — a forwarded post",
+            "flag": true
+          },
+          {
+            "label": "Original source",
+            "value": "None named",
+            "flag": true
+          },
+          {
+            "label": "Official notice or link",
+            "value": "None",
+            "flag": true
+          },
+          {
+            "label": "Date and details",
+            "value": "“Starting tomorrow” — no date, no specific areas",
+            "flag": true
+          },
+          {
+            "label": "Writing style",
+            "value": "Many exclamation marks and ALL-CAPS words",
+            "flag": false
+          }
+        ],
+        "where_heading": "Where to check"
+      },
+      "feel": {
+        "kicker": "Feature 04 · Psychological impact analyzer",
+        "heading": "How did you feel reading it?",
+        "prompt": "Pick the closest feeling — there is no wrong answer.",
+        "options": [
+          {
+            "id": "worried",
+            "emoji": "😟",
+            "label": "Worried",
+            "text": "Feeling worried is natural. The post is built to trigger exactly this: a close deadline (“tomorrow”), a threat to something essential (water), and a sense that time is running out. The worry is a reaction to the style, not necessarily to the truth of the claim."
+          },
+          {
+            "id": "angry",
+            "emoji": "😠",
+            "label": "Angry",
+            "text": "Anger makes sense. “They're hiding it” plants a feeling of injustice — that someone is deceiving you. Anger makes sharing faster, which is exactly what the post asks for."
+          },
+          {
+            "id": "sad",
+            "emoji": "😔",
+            "label": "Down",
+            "text": "Feeling down is understandable when something essential seems at risk and out of your control. Take a breath. You don't need to act right now to be safe."
+          },
+          {
+            "id": "confused",
+            "emoji": "😕",
+            "label": "Confused",
+            "text": "Confusion is a healthy signal: you noticed something is missing. The post gives no source, no date and no details — reason enough to pause."
+          },
+          {
+            "id": "fine",
+            "emoji": "🙂",
+            "label": "Fine",
+            "text": "Good that it did not affect you much. Even if you feel calm, others may feel the pressure — think before you forward it."
+          }
+        ]
+      },
+      "next": {
+        "kicker": "Choose a response",
+        "heading": "What's your next step?",
+        "prompt": "You decide. These are options, not instructions.",
+        "options": [
+          {
+            "id": "pause",
+            "emoji": "⏸️",
+            "label": "Pause",
+            "text": "Don't forward it yet. Take three slow breaths and come back in ten minutes. True news is still true ten minutes later."
+          },
+          {
+            "id": "check",
+            "emoji": "🔎",
+            "label": "Check",
+            "text": "Look for a notice on the water company's or the municipality's official page. If you find nothing, ask whoever sent it: “Where did this come from?”"
+          },
+          {
+            "id": "ground",
+            "emoji": "🌿",
+            "label": "Ground yourself",
+            "text": "Try 5-4-3-2-1: name 5 things you see, 4 you can touch, 3 you hear, 2 you smell and 1 you taste. It brings you back to the present moment."
+          },
+          {
+            "id": "disengage",
+            "emoji": "🚪",
+            "label": "Step away",
+            "text": "Close the app, or mute the group for an hour. Stepping away from distressing content is not running away — it is a choice."
+          }
+        ]
+      }
+    }
+  },
+  "quiz": {
+    "ar": {
+      "options": [
+        "الإلحاح",
+        "سلطة زائفة أو مبهمة",
+        "لغة عاطفية مشحونة",
+        "غياب المصدر"
+      ],
+      "questions": [
+        {
+          "post": "آخر فرصة!! التسجيل في دعم الوقود يتسكّر بعد ساعتين. ابعت رقمك الوطني على هالرقم توّا ولا يضيع عليك للأبد! 📲",
+          "answer": 0,
+          "explain": "«آخر فرصة» و«بعد ساعتين» و«للأبد» كلها ضغط زمني. وانتبه: الجهات الرسمية لا تطلب رقمك الوطني عبر رسالة."
+        },
+        {
+          "post": "بروفيسور عالمي مشهور أكّد إن أبراج الاتصالات تجيب الصداع للصغار. العلم قال كلمته وخلاص 📡",
+          "answer": 1,
+          "explain": "من هو البروفيسور؟ وأين الدراسة؟ «خبير مشهور» بلا اسم ولا مرجع سلطةٌ مبهمة — تبدو مقنعة لكن لا يمكن التحقّق منها."
+        },
+        {
+          "post": "شوفوا شن دارو في جنينة الحومة… فضيحة تكسّر القلب. اللي يسكت خاين! 💔",
+          "answer": 2,
+          "explain": "كلمات مثل «فضيحة» و«تكسّر القلب» و«خاين» تثير المشاعر وتقسم الناس، دون أن تقول ما الذي حدث فعلًا."
+        }
+      ]
+    },
+    "en": {
+      "options": [
+        "Urgency",
+        "Fake or vague authority",
+        "Loaded emotional language",
+        "Missing source"
+      ],
+      "questions": [
+        {
+          "post": "LAST CHANCE!! Registration for the fuel subsidy closes in 2 hours. Send your national ID number to this number NOW or lose it forever! 📲",
+          "answer": 0,
+          "explain": "“Last chance”, “2 hours” and “forever” are all time pressure. And note: official bodies don't ask for your national ID by text message."
+        },
+        {
+          "post": "A famous international professor confirmed that phone towers cause headaches in children. Science has spoken. 📡",
+          "answer": 1,
+          "explain": "Which professor? Which study? A “famous expert” with no name or reference is vague authority — it sounds convincing but cannot be checked."
+        },
+        {
+          "post": "Look at what they did to our neighbourhood park — a disgrace that breaks every honest heart. Whoever stays silent is a traitor! 💔",
+          "answer": 2,
+          "explain": "“Disgrace”, “breaks every heart” and “traitor” stir emotion and divide people, without saying what actually happened."
+        }
+      ]
+    }
+  },
+  "coach": {
+    "ar": {
+      "context_user": "أنت",
+      "context_comment": "فيه مصدر رسمي لهالخبر؟",
+      "hostile_user": "user_8841",
+      "hostile_comment": "أكيد تدافع عليهم، اللي زيّك ديما مغفّلين. بطّل تشكّك في كل شي يا غبي 🙄",
+      "options": [
+        {
+          "emoji": "🕊️",
+          "label": "ردّ بهدوء",
+          "reply": "ما فيش داعي للسب. أنا مش ندافع على حد، نبي بس نعرفوا الصح كلنا.",
+          "why": "يخفّف التوتر ويعيد الحديث إلى المعلومة بدل الشخص، والهدوء يُظهر للقرّاء الصامتين من هو المنطقي."
+        },
+        {
+          "emoji": "🔎",
+          "label": "عُد إلى المصدر",
+          "reply": "لو الانقطاع صحيح، الشركة بتعلن عليه. خلّينا ننشروا الإعلان الرسمي لما يطلع، هكي نفيدوا الناس أكثر.",
+          "why": "لا ينجرّ إلى الإهانة، ويقترح خطوة عملية تفيد الجميع، فيبقى النقاش حول الدليل."
+        },
+        {
+          "emoji": "🚪",
+          "label": "انسحب أو بلّغ",
+          "reply": "لا تردّ. اكتم الشخص، وبلّغ عن التعليق إن تضمّن تهديدًا أو هجومًا على هوية أحد.",
+          "why": "لست مُلزمًا بالرد على أحد؛ فالرد على العدوانية كثيرًا ما يضخّمها، لأن الخوارزميات تكافئ التفاعل."
+        }
+      ],
+      "avoid": [
+        "الرد بإهانة",
+        "التشهير بالشخص أو بمدينته أو عائلته",
+        "إعادة نشر التعليق للسخرية منه"
+      ]
+    },
+    "en": {
+      "context_user": "You",
+      "context_comment": "Is there an official source for this?",
+      "hostile_user": "user_8841",
+      "hostile_comment": "Of course you defend them, people like you are always naive. Stop doubting everything, idiot. 🙄",
+      "options": [
+        {
+          "emoji": "🕊️",
+          "label": "Reply calmly",
+          "reply": "No need for insults. I'm not defending anyone — I just want us all to know what's true.",
+          "why": "Lowers the temperature and brings the focus back to the information, not the person. Calm shows silent readers who is being reasonable."
+        },
+        {
+          "emoji": "🔎",
+          "label": "Return to the source",
+          "reply": "If the cut is real, the company will announce it. Let's share the official notice once it's out — that helps people more.",
+          "why": "Doesn't take the bait, and offers a practical step everyone benefits from. Keeps the conversation on evidence."
+        },
+        {
+          "emoji": "🚪",
+          "label": "Disengage or report",
+          "reply": "Don't reply. Mute the person, and report the comment if it threatens anyone or attacks their identity.",
+          "why": "You don't owe anyone a reply. Responding to hostility often amplifies it, because algorithms reward engagement."
+        }
+      ],
+      "avoid": [
+        "Insulting back",
+        "Shaming the person, their city or their family",
+        "Reposting the comment to mock it"
+      ]
+    }
+  },
+  "fb_page": {
+    "ar": {
+      "name": "أخبار الحومة",
+      "time": "منذ ٣ ساعات",
+      "stats": "👍 ١٫٢ ألف   💬 ٣٤٠   ↪️ ٢٫١ ألف"
+    },
+    "en": {
+      "name": "Al-Hawma News",
+      "time": "3 h",
+      "stats": "👍 1.2K   💬 340   ↪️ 2.1K"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+[theme]
+base = "light"
+primaryColor = "#315B4C"
+backgroundColor = "#FBFAF6"
+secondaryBackgroundColor = "#EEF1EA"
+textColor = "#142B2E"
+font = "sans serif"
+
+[client]
+toolbarMode = "minimal"
+showErrorDetails = false
+
+[browser]
+# Privacy: don't send Streamlit usage statistics anywhere.
+gatherUsageStats = false

@@ -1,0 +1,47 @@
+{
+  "_note": "Generic places to check. Deliberately no URLs: the team's local reviewers should fill in verified official pages before any real release.",
+  "ar": [
+    {
+      "emoji": "🏛️",
+      "name": "الصفحة الرسمية لشركة المياه",
+      "why": "أي انقطاع مخطّط له يُعلَن هنا أولًا."
+    },
+    {
+      "emoji": "🏙️",
+      "name": "الصفحة الرسمية للبلدية",
+      "why": "تنشر البلديات مواعيد الصيانة والمناطق المتأثرة."
+    },
+    {
+      "emoji": "📰",
+      "name": "وسيلة إعلام محلية معروفة",
+      "why": "تذكر مصادرها، وتصحّح أخطاءها علنًا."
+    },
+    {
+      "emoji": "🙋",
+      "name": "اسأل من أرسل إليك المنشور",
+      "why": "«من أين جاء هذا الخبر؟» — سؤال بسيط يوقف كثيرًا من الشائعات."
+    }
+  ],
+  "en": [
+    {
+      "emoji": "🏛️",
+      "name": "The water company's official page",
+      "why": "Any planned cut is announced here first."
+    },
+    {
+      "emoji": "🏙️",
+      "name": "The municipality's official page",
+      "why": "Municipalities publish maintenance schedules and affected areas."
+    },
+    {
+      "emoji": "📰",
+      "name": "An established local news outlet",
+      "why": "Names its sources, and corrects mistakes in public."
+    },
+    {
+      "emoji": "🙋",
+      "name": "Ask whoever sent it",
+      "why": "“Where did this come from?” — a simple question that stops many rumours."
+    }
+  ]
+}
