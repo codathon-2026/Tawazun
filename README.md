@@ -95,6 +95,7 @@ and which next step they want to take.
 | **Deploy** | Streamlit Cloud, GitHub, backup demo video |
 
 > **No training. No database. No backend. Just prompts + APIs + 36 hours.**
+> 
 > Note : for the demo we used streamlit, but we are planning to use next.js as our long term goal 
 ---
 
