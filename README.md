@@ -192,7 +192,7 @@ tawazun/
 
 - **Suliman Hashem**
 - **Buthina Urayet**
-- **Abdulhafiz Al-Sallai**
+- **Abdulhafiz Alsalay**
 
 ---
 
